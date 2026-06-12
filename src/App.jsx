@@ -31,13 +31,23 @@ function App() {
   
   return(
     <div className="container">
-      <h1 className="header">Random Quote Generator</h1>
-      <p className="quote">{quote}</p>
-      <p className="author"><strong>{author}</strong></p>
-      {isLoading && <p className="loading-masg">Loading...</p>}
-      <button className="btn-random"
-              onClick={fetchQuote}
-      >Generate</button>
+      <div className="quote-card">
+        <h1 className="header">Random Quote Generator</h1>
+        {isLoading ? (
+          <p className="loading-msg"></p>
+        ) : (
+          <>
+            <p className="quote">{quote}</p>
+            <p className="author"><strong>{author}</strong></p>
+          </>
+        )}
+
+        <button className="btn-random"
+                onClick={fetchQuote}
+        >
+          New Quote
+        </button>
+      </div>
     </div>
   )
 }
