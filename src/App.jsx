@@ -34,7 +34,7 @@ function App() {
       <div className="quote-card">
         <h1 className="header">Random Quote Generator</h1>
         {isLoading ? (
-          <p className="loading-msg"></p>
+          <p className="loading-msg">Loading...</p>
         ) : (
           <>
             <p className="quote">{quote}</p>

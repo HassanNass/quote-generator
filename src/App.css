@@ -1,0 +1,54 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.quote-card {
+  background: #fffaf4;
+  width: 100%;
+  max-width: 700px;
+  padding: 3rem;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0, 0.10);
+}
+
+.quote {
+  font-family: "Playfair Display", serif;
+  font-size: 1.7rem;
+  line-height: 1.7;
+  color: #2f2a26;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.author {
+  color: #8b6f47;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.loading-msg {
+  color: #8b6f47;
+  margin: 2rem 0;
+}
+
+.btn-random {
+  border: none;
+  background: #b88654;
+  color: white;
+  font-size: 1rem;
+  padding: 0.9rem 2rem;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-random:hover {
+  background: #9c7045;
+  transform: translateY(-2px);
+}
