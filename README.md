@@ -1,16 +1,42 @@
-# React + Vite
+# Random Quote Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based Random Quote Generator that fetches and displays inspirational quotes from an external API. Users can generate a new quote at any time using the button provided, while the application also automatically refreshes the quote every 10 seconds. Each quote is displayed alongside its author in a clean and elegant interface.
 
-Currently, two official plugins are available:
+## What I Learned
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Through this project, I gained practical experience working with APIs in React and handling asynchronous data fetching using the Fetch API. I strengthened my understanding of React Hooks by managing application state with useState and performing side effects with useEffect. Additionally, I learned how to implement loading states, conditionally render content based on application state, and automate updates using JavaScript timers.
 
-## React Compiler
+* Fetching data from external APIs
+* Working with asynchronous JavaScript using async/await
+* Managing application state with useState
+* Performing side effects with useEffect
+* Handling loading states
+* Conditional rendering in React
+* Using setInterval for automatic updates
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Prerequisites
 
-## Expanding the ESLint configuration
+* Node.js (version 18 or later recommended)
+* npm (included with Node.js)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How to Run It Locally
+
+To run this project on your local machine:
+
+* Clone the repository:
+
+  git clone https://github.com/HassanNass/quote-generator.git
+
+* Navigate to the project directory:
+
+  cd quote-generator
+
+* Install dependencies:
+
+  npm install
+
+* Start the development server:
+
+  npm run dev
+
+Open your browser and visit the URL displayed in the terminal (typically http://localhost:5173 for Vite projects).
